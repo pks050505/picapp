@@ -59,10 +59,10 @@ RUN curl -o flutter.tar.xz $FLUTTER_URL \
   && flutter config --no-analytics \
   && flutter precache \
   && yes "y" | flutter doctor --android-licenses \
-  && flutter doctor \
-  && flutter emulators --create \
-  && flutter update-packages
-RUN flutter doctor
+#   && flutter doctor \
+#   && flutter emulators --create \
+#   && flutter update-packages
+# RUN flutter doctor
 # COPY entrypoint.sh /usr/local/bin/
 # COPY chown.sh /usr/local/bin/
 # COPY flutter-android-emulator.sh /usr/local/bin/flutter-android-emulator
